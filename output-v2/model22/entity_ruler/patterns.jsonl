@@ -1,0 +1,5 @@
+{"label":"FATHER_NAME","pattern":[{"LOWER":"father"},{"LOWER":"name"},{"POS":"PROPN","OP":"+"}]}
+{"label":"FATHER_NAME","pattern":[{"LOWER":"s"},{"TEXT":"/"},{"LOWER":"o"},{"IS_SPACE":true,"OP":"?"},{"POS":"PROPN","OP":"+"}]}
+{"label":"AGE","pattern":[{"LOWER":"age"},{"IS_DIGIT":true}]}
+{"label":"ADDRESS","pattern":[{"LOWER":{"IN":["pin","p","s"]}},{"LOWER":{"IN":["code","."]},"OP":"?"},{"TEXT":{"REGEX":"\\d{6}"}}]}
+{"label":"ADDRESS","pattern":[{"LOWER":{"IN":["flat","flt","f"]}},{"TEXT":{"REGEX":"[A-Z]*\\d+"}}]}
